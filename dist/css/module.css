@@ -39,6 +39,14 @@ body {
 .menubar__right-links p {
   color: white;
 }
+@media (max-width: 764px) {
+  .menubar__top-links {
+    display: none;
+  }
+  .menubar__right-links {
+    gap: 1rem;
+  }
+}
 
 .btn-green {
   padding: 0.5rem 1rem;

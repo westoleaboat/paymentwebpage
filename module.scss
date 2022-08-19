@@ -57,6 +57,15 @@ body {
       color: white;
     }
   }
+
+  @media (max-width: 764px) {
+    &__top-links {
+      display: none;
+    }
+    &__right-links {
+      gap: 1rem;
+    }
+  }
 }
 
 .btn-green {
