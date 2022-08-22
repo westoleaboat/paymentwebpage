@@ -154,6 +154,9 @@ body {
     width: 80%;
     padding-bottom: 2rem;
   }
+  .welcome__promo-details__buttons {
+    gap: 3rem;
+  }
   .welcome__promo-details h1 {
     width: 100%;
   }
@@ -192,6 +195,7 @@ body {
 @media (max-width: 764px) {
   .cards {
     flex-direction: column;
+    gap: 4rem;
   }
 }
 
@@ -319,7 +323,7 @@ body {
   grid-template-rows: repeat(7, 1fr);
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 3rem;
 }
 .integration__grid a {
@@ -353,48 +357,55 @@ body {
   border-radius: 1000px;
   border: 30px solid rgb(35, 35, 66);
 }
-.integration__grid .svg-link.logo1 {
-  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
-}
 .integration__grid .logo1 {
   grid-column: 5/7;
   grid-row: 4/7;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo2 {
   grid-column: 3/8;
   grid-row: 1/4;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo3 {
   grid-column: 8/11;
   grid-row: 9/5;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo4 {
   grid-column: 8/10;
   grid-row: 1/5;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo5 {
   grid-column: 2/5;
   grid-row: 1/5;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo6 {
   grid-column: 12/10;
   grid-row: 1/7;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo7 {
   grid-column: 3/5;
   grid-row: 4/8;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo8 {
   grid-column: 7/8;
   grid-row: 5/8;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo9 {
   grid-column: 1/3;
   grid-row: 3/7;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 .integration__grid .logo10 {
   grid-column: 5/10;
   grid-row: 5/2;
+  background-image: url("https://25971556.fs1.hubspotusercontent-eu1.net/hubfs/25971556/PSI/social-media-logos/blender-original.svg");
 }
 @media (max-width: 1200px) {
   .integration {
@@ -600,6 +611,8 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  min-width: 65px;
+  max-width: 70px;
 }
 .join-community .logo-svg {
   width: 50px;
@@ -609,6 +622,7 @@ body {
 .join-community__link-list {
   padding-top: 1rem;
   gap: 1rem;
+  padding-left: 0px;
 }
 .join-community__text {
   max-width: 1100px;
@@ -626,6 +640,11 @@ body {
   list-style: none;
   justify-content: center;
 }
+@media (max-width: 764px) {
+  .join-community__link-list {
+    padding-left: 0px;
+  }
+}
 
 footer {
   background-color: #003822;
@@ -635,8 +654,9 @@ footer .text {
   display: flex;
   max-width: 1100px;
   margin-inline: auto;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: white;
+  gap: 2rem;
 }
 footer .text a {
   text-decoration: none;
@@ -645,12 +665,13 @@ footer .text a {
 footer .text ul {
   list-style: none;
   color: #FFFFFF;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   gap: 0.5rem;
 }
 footer .text .title {
   font-weight: bold;
   padding-bottom: 1rem;
+  font-size: 0.9rem;
 }
 @media (max-width: 1200px) {
   footer {
@@ -663,7 +684,19 @@ footer .text .title {
   }
   footer .text {
     row-gap: 1rem;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 375px) {
+  footer .text {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  footer .text ul {
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=module.css.map */
