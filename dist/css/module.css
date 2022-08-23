@@ -92,7 +92,7 @@ body {
 .welcome__promo-details__buttons {
   display: flex;
   justify-content: start;
-  gap: 5.5rem;
+  gap: 2rem;
 }
 .welcome__promo-details__buttons button {
   font-size: 20px;
@@ -155,7 +155,7 @@ body {
     padding-bottom: 2rem;
   }
   .welcome__promo-details__buttons {
-    gap: 3rem;
+    gap: 1.5rem;
   }
   .welcome__promo-details h1 {
     width: 100%;
